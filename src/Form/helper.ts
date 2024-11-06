@@ -7,7 +7,6 @@ export const SalaryRange:SalaryRangeType[] = [
     {range:  "> 4000"}
 ]
 
-
 export const initialValues:FormSchema = {
     firstName: {
       value: '',
@@ -43,7 +42,6 @@ export const initialValues:FormSchema = {
       helperText: ''
     }
   }
-  
 
 export const handleClick = (page:FormPages, fn:(page:FormPages) => void) => {
     fn(page);

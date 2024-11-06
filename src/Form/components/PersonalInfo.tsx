@@ -1,8 +1,8 @@
 import * as React from "react";
 import { TextField } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { FormPages, FormProps, } from "../types";
 import PageNavigation from "./PageNavigation";
+import { FormPages, FormProps, } from "../types";
 import { handleChange, initialValues } from "../helper";
 
 export default function PersonalInfo({updatePage, updateData, formData}: FormProps) {
@@ -14,8 +14,9 @@ export default function PersonalInfo({updatePage, updateData, formData}: FormPro
         return Object.keys(fieldsToValidate)
                     .some(field => (formData[field].required && !formData[field].value) || formData[field].error);
     }
+    // TODO: Validate contact number
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{pt: 4}}>
             <Grid size={12}>
                 <TextField fullWidth 
                 required

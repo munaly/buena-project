@@ -9,13 +9,6 @@ export type SalaryRangeType = {
     range: string
 }
 
-export type IFormData = {
-    firstName: string,
-    lastName: string,
-    email: string,
-    contact: string,
-    salary: string
-}
 export type FormSchema = Record<
   string,
   {
@@ -24,7 +17,6 @@ export type FormSchema = Record<
     required?: boolean;
     validate?:
       | "text"
-      | "number"
       | "email"
       | "phone"
       | "zip"

@@ -1,12 +1,12 @@
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { FormPages, FormProps } from "../types";
 import PageNavigation from "./PageNavigation";
+import { FormPages, FormProps } from "../types";
 import { handleChange, SalaryRange } from "../helper";
 
 export default function SalaryInfo({updatePage, updateData, formData}: FormProps) {
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{pt: 4}}>
             <Grid size={12}>
                 <FormControl>
                     <FormLabel>Salary Range</FormLabel>
